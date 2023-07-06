@@ -1,0 +1,573 @@
+        body {
+            background: black;
+
+        }
+        .disclaimer{
+            display:none;
+        }
+        img {
+    pointer-events: none;
+}
+        h1{
+            width:min-content;
+            color: aqua;
+        }
+        .useri{
+                font-size: 1rem;
+    font-weight: 800;
+        }
+        .shadow{
+            animation:shadow 2s linear;
+        }
+        .center{
+            top:0px;
+            /*bottom:0px;*/
+            /*position:fixed;*/
+            z-index:1234;
+        }
+        @keyframes shadow {
+  from {
+      width:200px;
+      height:200px;
+  }
+  to {
+      width:0px;
+      height:0px;
+      z-index:-29;
+      display:none;
+  }
+}
+
+        
+        
+        
+        
+        .okkkkk{
+                width: 95vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index:15;
+    /*justify-content: center*/
+        }
+        .commenti{
+            color: darkorange;
+    font-size: 1rem;
+    /* margin-right: 70vh; */
+    margin-left: 10px;
+        }
+        .area2{
+width: 67vw;
+    height: calc(1.5em + .75rem + 2px);
+    /* height: 12.2vh; */
+    background: black;
+    border: none;
+    border-bottom:grey solid 2px;
+        }
+        #pro1{
+            pointer-events:auto;
+        }
+        .area{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+        .line {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        .grid-container{
+            width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: #0a0a0a;
+    padding: 6px;
+    color: blanchedalmond;
+    grid-gap: 6px;
+        }
+        .grid-items{
+            background: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 0px;
+    font-size: 2rem;
+    text-align: center;
+        }
+        .circle {
+            /* From https://css.glass */
+background: rgba(204, 200, 200, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(204, 200, 200, 0.3);
+            color:black;
+            margin: auto;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            border-radius: 124px;
+            border-radius: 50%;
+            /*background: #e0e0e0;*/
+            /*box-shadow: 12px 12px 28px #8f8f8f,*/
+                /*-12px -12px 28px #ffffff;*/
+            justify-content: center;
+        }
+
+        .pro {
+            height: 230px;
+            width: 230px;
+            border-radius: 50%;
+            /* From https://css.glass */
+background: white;
+/*border-radius: 16px;*/
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(204, 200, 200, 0.3);
+            /*box-shadow: 12px 12px 28px #8f8f8f,*/
+                /*-12px -12px 28px #ffffff;*/
+        }
+
+        #form {
+            display: flex;
+        }
+
+        #form1 {
+            display: flex;
+            flex-direction: column;
+            margin-top: 70px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .commentary{
+            margin-bottom:4vh;
+        }
+        #upload5{
+            border-radius: 150px;
+            color:white;
+            /*background: black;*/
+            /*box-shadow: 3px 11px 4px #5a5a5a, -3px -11px 15px #ffffff;*/
+            height: 100px;
+            width: 100px;
+            /*font-family: 'Rampart One', cursive;*/
+            /* From https://css.glass */
+background: rgba(204, 200, 200, 0.2);
+/*border-radius: 16px;*/
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(204, 200, 200, 0.3);
+        }
+        #id {
+            z-index: 2;
+            width: 240px;
+            /* border-radius: 50%; */
+            /* background: #e0e0e0; */
+            /* box-shadow: 25px 25px 28px #5a5a5a, -25px -25px 28px #ffffff; */
+            /* height: 111px; */
+            background-color: #9acd32;
+            margin: 10px;
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* padding: 5px; */
+            margin-left: 67px;
+        }
+
+        #content {
+            justify-content: center;
+            /* position: absolute; */
+        }
+
+        .profilepic {
+            margin-top: 15px;
+            margin-left: 15px;
+            /* position: absolute; */
+            /*width: auto;*/
+            /* margin-left: 10vw; */
+            border-radius: 200%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top:10vh;
+        }
+
+        .first {
+            margin-top: 70px;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.2rem;
+            justify-content: center;
+            align-items: center;
+            background:black;
+            color:white;
+        }
+
+        .first1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: fit-content;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .loader {
+ border: 16px solid #f3f3f3;
+    border-radius: 100%;
+    border-top: 18px solid #3498db;
+    border-bottom: 18px solid yellow;
+    width: 120px;
+    border-right: 18px solid orange;
+    border-left: 18px solid green;
+    height: 120px;
+    /* position: fixed; */
+    /* top: 50vh; */
+    /* left: 50vw; */
+    /* display: none; */
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+        .first3 {
+            display: flex;
+            justify-content: center;
+            /*align-items: center;*/
+            width: 70%;
+            height: 50vh;
+        }
+
+        .captiondiv {
+            display: flex;
+            z-index:5;
+        }
+
+        .User {
+            margin-right: 11px;
+            font-weight: 500;
+        }
+        .hide{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    width: 80vw;
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+        .first2 {
+            margin-top: 20vh;
+            padding: 20px;
+            border-radius: 50px;
+            background: #3e3828;
+            box-shadow: 8px 8px 16px #28241a,
+                -8px -8px 16px #544c36;
+            height: 50vh;
+            margin-left: 19px;
+            width: 50%;
+        }
+        .logo{
+            width:20vw;
+        }
+        .imgclass{
+            background:black;
+        }
+        @media (max-width:768px) {
+            .first {
+                flex-direction: column;
+            }
+
+            .first1 {
+                width: 80%;
+            }
+
+            .first2 {
+                /* margin-top: 10px; */
+                width: 80%;
+            }
+
+        }
+        .img {
+            width: 103%;
+            /*height: 80%;*/
+            border-radius: inherit;
+        }
+
+        #upload2 {
+            margin-top: 60px;
+            height: 100px;
+            width: 100px;
+            font-size: larger;
+            font-weight: 600;
+            border-radius: 50%;
+            border-radius: 150px;
+            color:white;
+            /*background: black;*/
+            /*box-shadow: 3px 11px 4px #5a5a5a, -3px -11px 15px #ffffff;*/
+            height: 100px;
+            width: 100px;
+            font-family: 'Rampart One', cursive;
+            /* From https://css.glass */
+background: rgba(204, 200, 200, 0.2);
+/*border-radius: 16px;*/
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(204, 200, 200, 0.3);
+        
+        }
+
+        .h3,
+        h3 {
+            text-align: center;
+            font-size: 1.75rem;
+            color:aqua;
+        }
+        
+        .post {
+            /*display: flex;*/
+            /*flex-direction: row-reverse;*/
+        }
+
+        .post1 {
+            font-size: larger;
+            margin: auto;
+        }
+        #numComments{
+            font-family:'Rampart One', cursive;
+            color:cornflowerblue;
+        }
+        .post2 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            /* border-radius: 150px; */
+            background: linear-gradient(315deg, #cacaca, #f0f0f0);
+            box-shadow: -34px -34px 68px #656565,
+                34px 34px 68px #ffffff;
+            padding: 30px;
+
+        }
+        .ques{
+            position: fixed;
+    z-index: 12;
+    background-image: linear-gradient(
+45deg
+, black, #0c91eff2);
+    color: aqua;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: 'Rampart One';
+        }
+        .small {
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            margin-right: 20px;
+        }
+
+        .username {
+            display: flex;
+            /* margin: 21px; */
+            /* margin-right: vw; */
+            font-size: 1.9rem;
+            border-radius: 0px;
+            z-index: 2;
+        }
+        #content1{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            width:100vw;
+            background-color:black;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+    margin: 20px;
+    border-radius: 0px;
+    background: rgba(204, 200, 200, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(204, 200, 200, 0.3);
+    /* background: linear-gradient(
+315deg
+, #cacaca, #f0f0f0); */
+    /* box-shadow: -34px -34px 68px #656565, 34px 34px 68px #ffffff; */
+    width: 89vw;
+    height: fit-content;
+
+        }
+
+        .nav-item {
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .time {
+            margin-left:5vw;
+        }
+
+
+
+        .user {
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: flex;
+        }
+        video {
+  pointer-events: none;
+}
+        .comment {
+            background: #ffffff59;
+            box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+            backdrop-filter: blur(4.0px);
+            -webkit-backdrop-filter: blur(4.0px);
+            border-radius: 10px;
+            border: 1px solid #ffffff2e;
+            padding: 10px;
+            margin-top: 20px;
+            width: 80vw;
+            color:floralwhite;
+        }
+        h1{
+            font-family:'Rampart One', cursive;
+        }
+        .name {
+            font-family:'Rampart One', cursive;
+            color: ivory;
+            text-decoration: none;
+            font-weight: 500;
+            z-index: 2;
+        }
+
+        .iframe {
+            height: 70vh;
+        }
+        #head3{
+            font-family:'Rampart One', cursive;
+            font-weight: 600;
+    padding: 10px;
+    color: gold;
+        }
+        .likeb{
+                height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 25%;
+    z-index: 1000;
+    left: 68px;
+    display: none;
+        }
+        .box{
+            display: flex;
+    flex-direction: column;
+        }
+        .Post {
+            border-radius: 0px;
+            background: linear-gradient(315deg, #cacaca, #f0f0f0);
+            box-shadow: -11px -11px 22px #5a5a5a,
+                11px 11px 22px #ffffff;
+        }
+        .down{
+            width: 100vw;
+    position: fixed;
+    height: 44px;
+    background: rgba(204, 200, 200, 0.2);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(204, 200, 200, 0.3);
+    /* background: linear-gradient( 
+315deg
+ , #cacaca, #f0f0f0); */
+    bottom: 0px;
+    z-index: 200000000000000;
+        }
+        .icon {
+            border-radius:140%;
+            width: 80%;
+            height: 90%;
+        }
+        .icong{
+            /*border-radius: 140%;*/
+    width: 31%;
+    height: 90%;
+    margin-left: 10vw;
+        }
+        @media (min-width: 600px){
+.icon{
+    width: 5vw;
+    height:5vw;
+}
+.line{
+    width:40vw;
+}
+.icong{
+    width:9%;
+    height:98%;
+}
+        }
+.grid-container2{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: #0a0a0a;
+    padding: 6px;
+    color: blanchedalmond;
+    grid-gap: 6px;
+    background: rgba(204, 200, 200, 0.2);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(204, 200, 200, 0.3);
+    /* background: linear-gradient( 
+315deg
+ , #cacaca, #f0f0f0); */
+    bottom: 0px;
+    z-index: 200000000000000;
+}
+}
+#loaer{
+    display: inline-block;
+    color: aliceblue;
+    /*margin-left: 8vw;*/
+    margin: 6vw;
+}
+        /* justify-content: center;} */

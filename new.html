@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singular Jobs</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Lobster&display=swap');
+</style>
+<style>
+    body {
+        background-color: black;
+        color: antiquewhite;
+        font-size:1.2rem;
+        /*font-family: 'Lobster', cursive;*/
+    }
+    img{
+        pointer-events:none;
+    }
+    .flex-container-3{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: aqua;
+    font-size: 1.2rem;
+    }
+    .login{
+        text-decoration: none;
+    color: antiquewhite;
+    padding: 26px;
+    background: rgba(255, 255, 255, 0.2);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+     border-radius: 50px; 
+    /* background: #e0e0e0; */
+    /* box-shadow: 21px 21px 18px #848484, -21px -21px 18px #ffffff; */
+    margin: 34px;
+}
+    
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        font-family: 'Rampart One', cursive;
+    }
+    
+    .box {
+        position: fixed;
+        top: 0;
+        transform: rotate(80deg);
+        left: 0;
+        z-index: -133;
+    }
+    .lineu {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 4vw;
+        }
+    .end-box{
+        width: 100vw;
+    background: black;
+    margin-left: -8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    height: 40vh;
+    margin-bottom: -8px;
+    }
+    .second-c{
+        display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+    .first-c{
+        display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+    }
+     .circle {
+            /* From https://css.glass */
+background: rgba(204, 200, 200, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(204, 200, 200, 0.3);
+            color:black;
+            margin: auto;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            border-radius: 124px;
+            border-radius: 50%;
+            /*background: #e0e0e0;*/
+            /*box-shadow: 12px 12px 28px #8f8f8f,*/
+                /*-12px -12px 28px #ffffff;*/
+            justify-content: center;
+        }
+    .wave {
+        position: absolute;
+        opacity: .4;
+        width: 1500px;
+        height: 1300px;
+        margin-left: -150px;
+        margin-top: -250px;
+        border-radius: 43%;
+    }
+    .button{
+        text-decoration:none;
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        from {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .wave.-one {
+        animation: rotate 7000ms infinite linear;
+        opacity: .1;
+        background: #0af;
+    }
+    
+    .wave.-two {
+        animation: rotate 3000ms infinite linear;
+        opacity: .1;
+        background: black;
+    }
+    
+    .wave.-three {
+        animation: rotate 7500ms infinite linear;
+        background-color: #77daff;
+    }
+    /* @media (min-width:768px) { */
+    
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info {
+        font-size: medium;
+        /*font-family: 'Rampart One', cursive;*/
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgb(77 91 198 / 36%);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+        /*height: 80vh;*/
+        /*width: 100vw;*/
+        /*margin-top: 20vh;*/
+    }
+    
+    .left {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .right {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-src {
+        width: 30vw;
+        height: auto;
+    }
+    
+    .point {
+        font-family: 'Bree-serif';
+        font-size:1.2rem;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgb(19 218 187 / 43%);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        margin-bottom:20px;
+    }
+    .line{
+        /*display:flex;*/
+        /*justify-content:;*/
+        /*position:fixed;*/
+        top:0px;
+        right:20px;
+        width:20px;
+        height:auto;
+    }
+    #overlay{
+        display:none;
+        width:100vw;
+        height:100vh;
+        background-color:white;
+        font-size:2rem;
+        color:black;
+        position:fixed;
+        top:0px;
+        right:0px;
+        /*display:flex;*/
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+    }
+    .list-item{
+        text-decoration:none;
+        margin-top:20px;
+            list-style: none;
+    }
+    .left{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    flex-direction:column;
+    text-decoration:none;
+    }
+    @media (max-width:768px) {
+        .end-box{
+            flex-direction:column;
+        }
+        .first-c{
+            width:100%;
+        }
+        .second-c{
+            width:100%;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            /*height: 80vh;*/
+            /*width: 100vw;*/
+            /*margin-top: 0px;*/
+        }
+        .left {
+            height: auto;
+            width: auto;
+        }
+        .right {
+            height: auto;
+            width: auto;
+        }
+        .img-src {
+            width: 80%;
+            height: auto;
+            margin-top: -62px;
+        }
+        .point {
+            width: 70vw;
+            margin-bottom: 20px;
+        }
+        .info {
+            width: 70vw;
+            padding: 20px;
+        }
+    }
+    .close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+</style>
+
+<body>
+        <div class="line" onclick="on();">
+        <hr>
+        <hr>
+        <hr>
+    </div>
+    <div class="head">
+        <h1>Singular Jobs</h1>
+    </div>
+    <div class="lineu">
+        <div class="circle" data-aos="fade-right">
+            <h1 style="color:bisque;margin-top: 0.33rem;">W</h1>
+        </div>
+        <div class="circle" data-aos="fade-right">
+            <h1 style="color:bisque;margin-top: 0.33rem;">E</h1>
+        </div>
+        <div class="circle" data-aos="fade-right">
+            <h1 style="color:bisque;margin-top: 0.33rem;">L</h1>
+        </div>
+        <div class="circle" data-aos="fade-right">
+            <h1 style="color:bisque;margin-top: 0.33rem;">C</h1>
+        </div>
+        <div class="circle" data-aos="fade-left">
+            <h1 style="color:bisque;margin-top: 0.33rem;">O</h1>
+        </div>
+        <div class="circle" data-aos="fade-left">
+            <h1 style="color:bisque;margin-top: 0.33rem;">M</h1>
+        </div>
+        <div class="circle" data-aos="fade-left">
+            <h1 style="color:bisque;margin-top: 0.33rem;">E</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <img class="img-src" src="https://singularjobs.herokuapp.com/static/images/signup.4b14de47812c.png">
+            <div class="flex-container-3">
+								
+				<a href="https://singularjobs.herokuapp.com/singular-jobs/register" class="button"><div class="login" style="background:rgb(190 143 170 / 54%);">Sign Up</div></a>						
+				<a href="https://singularjobs.herokuapp.com/singular-jobs/login" class="button"><div class="login" style="background:rgb(2 255 228 / 51%);">Login</div></a>
+				
+		</div>
+	
+        </div>
+        <div class="right">
+            <div class="info">
+                <h2>Job Information Distribution Platform</h2>
+            </div>
+            <div class="points">
+                <p id="heading" data-aos="fade-right"> Why Singular Jobs ?</p>
+
+                <!--<ul class="unordered-list">-->
+                <li class="point" data-aos="fade-right" > Single gateway to access jobs on different platforms.</li>
+                <li class="point" data-aos="fade-right"> Saves times spent on searching job opportunities.</li>
+                <li class="point" data-aos="fade-right"> Helps in discovering opportunities at new ventures.</li>
+                <li class="point" data-aos="fade-right"> Helps in applying to jobs as soon as possible.</li>
+                <!--</ul>-->
+            </div>
+        </div>
+        </div>
+        <div class="content">
+        <div class="left" data-aos="fade-right">
+            <img style="width:auto; height:27vh;" src="https://www.pinclipart.com/picdir/big/2-22120_clip-art-transparent-library-jobs-job-announcement-find.png">
+        </div>
+        <div class="right">
+            
+            <div class="points">
+                <p id="heading" data-aos="fade-right"> What You Need To Do ?</p>
+
+                <!--<ul class="unordered-list">-->
+                <li class="point" data-aos="fade-right" style="background:rgb(249 177 26 / 58%);" > Mention your industry skills to get recommended a list of suitable jobs</li>
+                <li class="point" data-aos="fade-right" style="background:rgb(249 177 26 / 58%);"> Every 6 hours, curated from different job platforms..</li>
+                
+            </div>
+        </div>
+    </div>
+            <div class="left" data-aos="fade-right">
+            <img style="width:auto; height:27vh; margin-top:-30px;" src="https://randolphchamber.com/wp-content/uploads/2015/03/now-hiring.png">
+        </div>
+        <div class="end-box">
+            <div class="first-c">
+                <a style="text-decoration:none; color:white" href="#">&#169; Singular Jobs</a>
+                <a style="text-decoration:none; color:white" href="#">Contact-Us</a>
+                <a style="text-decoration:none; color:white" href="#">+91 9*********</a>
+                <a style="text-decoration:none; color:white" href="#">xyz@gmail.com</a>
+            </div>
+            <div class="second-c">
+                <a href="#" style="text-decoration:none; color:white" >We Are Here</a>
+                <a href="#" style="text-decoration:none; color:white" >Address</a>
+                <a href="#" style="text-decoration:none; color:white">Institute Of</a>
+                <a href="#" style="text-decoration:none; color:white">Engineering And Technology</a>
+                <a href="#" style="text-decoration:none; color:white">Lucknow , Uttar-Pradesh</a>
+            </div>
+        </div>
+        
+    <div class='box'>
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+    </div>
+
+    <div id="overlay">
+        <a href="#" class="close" onclick="off()"></a>
+        <div class="list">
+            <li class="list-item">HOME</li>
+            <li class="list-item">LOGIN</li>
+            <li class="list-item">REGISTER</li>
+            <li class="list-item">ABOUT US</li>
+        </div>
+        
+        
+    </div>
+    
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+function on() {
+  document.getElementById("overlay").style.display = "flex";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+</body>
+
+</html>
